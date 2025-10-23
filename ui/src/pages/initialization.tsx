@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Logo from '@/assets/icon.svg'
+import Logo from '@/assets/kites.svg'
 import {
   IconCheck,
   IconLoader,
@@ -208,7 +208,7 @@ export function InitializationPage() {
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <img src={Logo} className="h-10 w-10" />{' '}
-              <h1 className="text-2xl font-bold">Kite</h1>
+              <h1 className="text-2xl font-bold">Kites</h1>
             </div>
           </div>
 
@@ -386,7 +386,7 @@ export function InitializationPage() {
                         <p className="text-sm text-gray-600">
                           {t('initialization.step2.inClusterHint', {
                             defaultValue:
-                              'Import clusters from inside the running Kite instance. No kubeconfig required.',
+                              'Import clusters from inside the running Kites instance. No kubeconfig required.',
                           })}
                         </p>
                       </div>

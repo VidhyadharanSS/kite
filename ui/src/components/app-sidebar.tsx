@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useMemo } from 'react'
-import Icon from '@/assets/icon.svg'
+import Icon from '@/assets/kites.svg'
 import { useSidebarConfig } from '@/contexts/sidebar-config-context'
 import { CollapsibleContent } from '@radix-ui/react-collapsible'
 import { IconLayoutDashboard } from '@tabler/icons-react'
@@ -82,8 +82,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenuItem>
               <SidebarMenuButton asChild>
                 <Link to="/" onClick={handleMenuItemClick}>
-                  <img src={Icon} alt="Kite Logo" className="ml-1 h-8 w-8" />
-                  <span className="text-base font-semibold">Kite</span>
+                  <img src={Icon} alt="Kites Logo" className="ml-1 h-8 w-8" />
+                  <span className="text-base font-semibold">Kites</span>
                 </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>
@@ -110,10 +110,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               <Link to="/" onClick={handleMenuItemClick}>
                 <div className="relative flex items-center justify-between w-full">
                   <div className="flex items-center gap-2">
-                    <img src={Icon} alt="Kite Logo" className="h-8 w-8" />
+                    <img src={Icon} alt="Kites Logo" className="h-8 w-8" />
                     <div className="flex flex-col">
                       <span className="text-base font-semibold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                        Kite
+                        Kites
                       </span>
                       <VersionInfo />
                     </div>
@@ -130,8 +130,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                       }}
                       className="absolute right-0 top-0 mr-1 mt-1 rounded-sm bg-red-500/10 px-1.5 py-0.5 text-[9px] font-semibold uppercase text-red-500 hover:bg-red-500/20"
                       title={t(
-                        'A newer Kite version is available',
-                        'A newer Kite version is available'
+                        'A newer Kites version is available',
+                        'A newer Kites version is available'
                       )}
                     >
                       New

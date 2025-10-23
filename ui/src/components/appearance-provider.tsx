@@ -25,7 +25,7 @@ export function AppearanceProvider({
   themeStorageKey = 'vite-ui-theme',
   defaultColorTheme = 'default',
   colorThemeStorageKey = 'vite-ui-color-theme',
-  defaultFont = 'maple',
+  defaultFont = 'system', // <-- changed from 'maple' to 'system'
   fontStorageKey = 'vite-ui-font',
 }: AppearanceProviderProps) {
   return (
@@ -63,3 +63,4 @@ export function useAppearance() {
     [theme, actualTheme, colorTheme, font, setTheme, setColorTheme, setFont]
   )
 }
+

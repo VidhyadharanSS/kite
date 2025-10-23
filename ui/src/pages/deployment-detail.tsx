@@ -130,7 +130,7 @@ export function DeploymentDetail(props: { namespace: string; name: string }) {
         updatedDeployment!.spec!.template!.metadata!.annotations = {}
       }
       updatedDeployment.spec!.template!.metadata!.annotations![
-        'kite.kubernetes.io/restartedAt'
+        'kites.kubernetes.io/restartedAt'
       ] = new Date().toISOString()
       await updateResource('deployments', name, namespace, updatedDeployment)
       toast.success('Deployment restart initiated')

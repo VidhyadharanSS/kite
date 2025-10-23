@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react'
-import Logo from '@/assets/icon.svg'
+import Logo from '@/assets/kites.svg'
 import { useAuth } from '@/contexts/auth-context'
 import { useTranslation } from 'react-i18next'
 import { Navigate, useSearchParams } from 'react-router-dom'
@@ -143,7 +143,7 @@ export function LoginPage() {
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <img src={Logo} className="h-10 w-10 dark:invert" />{' '}
-              <h1 className="text-2xl font-bold">Kite</h1>
+              <h1 className="text-2xl font-bold">Kites</h1>
             </div>
             <p className="text-gray-600">{t('login.kubernetesDashboard')}</p>
           </div>

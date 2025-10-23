@@ -192,7 +192,7 @@ export function StatefulSetDetail(props: { namespace: string; name: string }) {
 
       // Add restart annotation to trigger pod restart
       updatedStatefulSet.spec.template.metadata.annotations[
-        'kite.kubernetes.io/restartedAt'
+        'kites.kubernetes.io/restartedAt'
       ] = new Date().toISOString()
 
       await updateResource('statefulsets', name, namespace, updatedStatefulSet)

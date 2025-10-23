@@ -149,7 +149,7 @@ export function DaemonSetDetail(props: { namespace: string; name: string }) {
 
       // Add restart annotation to trigger pod restart
       updatedDaemonSet.spec!.template!.metadata!.annotations[
-        'kite.kubernetes.io/restartedAt'
+        'kites.kubernetes.io/restartedAt'
       ] = new Date().toISOString()
 
       await updateResource('daemonsets', name, namespace, updatedDaemonSet)

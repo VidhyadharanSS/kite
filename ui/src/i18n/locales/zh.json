@@ -209,7 +209,7 @@
     "tryAgainHint": "您可以尝试使用具有所需权限的其他账户登录。",
     "noLoginMethods": "未配置登录方式",
     "configureAuth": "请在您的环境中配置身份验证提供程序",
-    "footer": "© {{year}} Kite. 版权所有。",
+    "footer": "© {{year}} Kites. 版权所有。",
     "documentation": "文档",
     "errors": {
       "accessDenied": "访问被拒绝",
@@ -327,7 +327,7 @@
     "errors": {
       "loadFailed": "加载集群失败"
     },
-    "deleteConfirmation": "此操作只会移除 kite 中的集群配置，不会删除任何集群资源。",
+    "deleteConfirmation": "此操作只会移除 kites 中的集群配置，不会删除任何集群资源。",
     "dialog": {
       "createTitle": "添加集群",
       "editTitle": "编辑集群",
@@ -423,7 +423,7 @@
   },
   "initialization": {
     "title": "初始化设置",
-    "welcome": "欢迎！让我们来设置您的 Kite Dashboard",
+    "welcome": "欢迎！让我们来设置您的 Kites Dashboard",
     "subtitle": "完成以下步骤开始使用",
     "description": "配置您的管理员用户并连接您的集群",
     "step1": {
