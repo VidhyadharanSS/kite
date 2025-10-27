@@ -1,5 +1,14 @@
 @custom-variant dark (&:is(.dark *));
 
+/* Zoho Puvi - Added for custom font */
+@font-face {
+  font-family: "Zoho Puvi";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("/fonts/ZohoPuvi/ZohoPuvi-Regular.otf") format("opentype");
+}
+
 /* maple-mono-latin-400-normal */
 @font-face {
   font-family: 'Maple Mono';
@@ -41,7 +50,8 @@
   --font-mono:
     'Maple Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
-  --app-font-sans: var(--font-sans);
+  /* MODIFIED: Set Zoho Puvi as the primary app font, with system fonts as fallback */
+  --app-font-sans: 'Zoho Puvi', var(--font-sans);
 }
 
 body {
